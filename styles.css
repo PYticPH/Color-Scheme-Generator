@@ -5,6 +5,10 @@ body {
   min-width: 200px;
 }
 
+main {
+  height: 600px;
+}
+
 h1 {
   font-family: 'Rubik Wet Paint', sans-serif;
   font-size: 2rem;
