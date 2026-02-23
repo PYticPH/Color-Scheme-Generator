@@ -1,8 +1,124 @@
 body {
   margin: 0;
   font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color: #ffffff;
+  min-width: 200px;
+}
+
+main {
+  height: 60vh;
 }
 
 h1 {
-  font-family: "Rubik Wet Paint", sans-serif;
+  font-family: 'Rubik Wet Paint', sans-serif;
+  font-size: 2rem;
+  margin: 1em 0 2em 0.5em;
+  color: firebrick;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-shadow: 7px 2px 5px #000000;
+}
+
+select {
+  width: 100%;
+  padding: 0.3em 0.2em;
+  font-size: 1rem;
+  text-align: center;
+  border: 2px solid grey;
+  outline: none;
+  border-radius: 5px;
+}
+
+
+input#color-picker {
+  width: 50px;
+  height: 50px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: gainsboro;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 1em;
+}
+
+section#color-scheme-settings {
+  row-gap: 1em;
+}
+
+section#color-palette {
+  margin-top: 4em;
+}
+
+#color-palette div {
+  width: 100%;
+  height: 100px;
+  border: none;
+  display: flex;
+  align-items: end;
+  padding: 0 0.5em 0.5em;
+}
+
+button {
+  display: block;
+  font-family: Inter, sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.color-code {
+  width: 100%;
+  padding: 0.5em;
+  color: midnightblue;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+}
+
+.get-color-scheme-btn {
+  background-color: #ffffff;
+  display: block;
+  padding: 0.7em 1em;
+  border: none;
+  font-size: 1rem;
+  border: 2px solid grey;
+}
+
+footer {
+  padding: 5em 1em;
+  background-color: #000000;
+  margin-top: 4em;
+}
+
+footer p {
+  font-size: 0.7rem;
+  color: #f5f5f5;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media (min-width: 767px) {
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  section {
+    flex-direction: row;
+  }
+
+  section#color-scheme-settings {
+    column-gap: 1em;
+  }
+
+  #color-palette div {
+    width: 50%;
+    height: 400px;
+    max-width: 200px;
+  }
 }
