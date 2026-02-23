@@ -112,11 +112,18 @@ footer p {
 
   section#color-scheme-settings {
     column-gap: 1em;
+    row-gap: 1em;
+    margin-top: 15em;
+
   }
 
   #color-palette div {
     width: 50%;
     height: 400px;
     max-width: 200px;
+  }
+
+  footer {
+    margin-top: 20em;
   }
 }
